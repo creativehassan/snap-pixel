@@ -57,7 +57,7 @@ There are seven standard event types supported in this plugin are : PURCHASE, ST
 = Where can I find more information on Snap Pixel? =
 *  You can find more information on the <a href="https://businesshelp.snapchat.com/en-US/article/snap-pixel-about">Snap Pixel</a>.
 = I am a developer. Can I help improve the plugin? =
-*  Of course! This plugin is open sourced on the GitHub. You can find the code and contribution instructions in the plugin repository.</a>.
+*  Of course! This plugin is open sourced on the GitHub. You can find the code and contribution instructions in the plugin repository <a href="https://github.com/creativehassan/snap-pixel"> Snap Pixel</a>.
 
 
 == Screenshots ==
