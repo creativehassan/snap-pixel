@@ -1,0 +1,37 @@
+#toplevel_page_snapchat-pixel .wp-menu-image img {
+    padding: 7px 0 0 0 !important;
+    opacity:1 !important;
+}
+.snapchat-wrapper .nav-tab:focus{
+	outline:none;
+	box-shadow:none;
+}
+img.img-heading {
+    float: left;
+    margin: 5px 8px 5px 0;
+    width: 20px;
+}
+.form-table td{
+	padding:8px 0;
+}
+.enable-woocommerce {
+    color: #fff;
+    background: gray;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.enable-woocommerce:hover, .enable-woocommerce:active, .enable-woocommerce:visited {
+    color: #fff;
+    background: #353434;
+}
+.enable-woocommerce:focus {
+    box-shadow: none;
+    outline:none;
+}
+.tab-content{
+	display: none;
+}
+.tab-content.active{
+	display: block;
+}
