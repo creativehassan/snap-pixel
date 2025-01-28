@@ -1,0 +1,184 @@
+.toplevel_page_snapchat-pixel .wp-menu-image img {
+    padding: 7px 0 0 0 !important;
+    opacity:1 !important;
+}
+.toplevel_page_snapchat-pixel #wpwrap{
+    padding-top: 20px;
+    background: #ffffff;
+}
+.toplevel_page_snapchat-pixel .form-row{
+    margin: 20px 20px 20px 0;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.toplevel_page_snapchat-pixel .form-row.full{
+    width: 100%;
+}
+.toplevel_page_snapchat-pixel strong{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+.toplevel_page_snapchat-pixel span.smallfont {
+    display: block;
+    margin-top: 10px;
+    color: #53575b;
+}
+.toplevel_page_snapchat-pixel .regular-text{
+    background: #f7f8f9;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 transparent;
+    height: 100%;
+    margin: 0;
+    padding: 8px 10px;
+}
+.toplevel_page_snapchat-pixel .regular-text:focus{
+    border-color: #ffd301;
+    box-shadow: none;
+}
+.toplevel_page_snapchat-pixel .form-row a:not(.enable-woocommerce){
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.toplevel_page_snapchat-pixel .enable-woocommerce{
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.toplevel_page_snapchat-pixel .snap-chat-switch{
+    margin: 10px 0;
+}
+.toplevel_page_snapchat-pixel .snap-chat-switch .label{
+    margin: 0 10px;
+}
+.toplevel_page_snapchat-pixel .hidden-checkbox {
+    display: none;
+}
+
+.toplevel_page_snapchat-pixel .ant-switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.toplevel_page_snapchat-pixel .ant-switch::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toplevel_page_snapchat-pixel .ant-switch-handle {
+    display: none;
+}
+
+.toplevel_page_snapchat-pixel .sds-icon {
+    display: none;
+}
+
+.toplevel_page_snapchat-pixel .hidden-checkbox:checked + .ant-switch {
+    background-color: #4CAF50;
+}
+
+.toplevel_page_snapchat-pixel .hidden-checkbox:checked + .ant-switch::before {
+    transform: translateX(20px);
+}
+
+.toplevel_page_snapchat-pixel .hidden-checkbox:checked + .ant-switch .sds-icon {
+    display: inline-block;
+}
+
+.toplevel_page_snapchat-pixel input#submit {
+    background-color: #3a3e41;
+    box-shadow: 0 0 0 1px #3a3e41;
+    color: #fff;
+    border-color: #3a3e41;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    height: auto;
+    justify-content: center;
+    line-height: 1;
+    outline: 1px;
+    padding: 8px 20px;
+    transition: all .15s cubic-bezier(.4,0,.2,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.toplevel_page_snapchat-pixel input#submit:hover{
+    background-color: #121314;
+    box-shadow: 0 0 0 2px #ffd301;
+}
+
+
+.toplevel_page_snapchat-pixel .snapchat-wrapper .nav-tab:focus{
+	outline:none;
+	box-shadow:none;
+}
+.toplevel_page_snapchat-pixel img.img-heading {
+    float: left;
+    margin: 5px 8px 5px 0;
+    width: 20px;
+}
+.toplevel_page_snapchat-pixel .form-table td{
+	padding:8px 0;
+}
+.toplevel_page_snapchat-pixel .enable-woocommerce {
+    color: #fff;
+    background: gray;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.toplevel_page_snapchat-pixel .enable-woocommerce:hover, .enable-woocommerce:active, .enable-woocommerce:visited {
+    color: #fff;
+    background: #7B51AD;
+}
+.toplevel_page_snapchat-pixel .enable-woocommerce:focus {
+    box-shadow: none;
+    outline:none;
+}
+.toplevel_page_snapchat-pixel .tab-content{
+	display: none;
+}
+.toplevel_page_snapchat-pixel .tab-content.active{
+	display: block;
+}
+.toplevel_page_snapchat-pixel .nav-tab{
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #3a3e41;
+    padding: 7px 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 0;
+    color: #3a3e41;
+    margin-right: 10px;
+}
+.toplevel_page_snapchat-pixel .nav-tab.nav-tab-active{
+    background-color: #3a3e41;
+    color: #fff;
+}
+.toplevel_page_snapchat-pixel .snapchat-wrapper {
+    margin-top: 20px;
+}
