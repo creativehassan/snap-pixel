@@ -1,0 +1,564 @@
+/**
+ * Pixel Integration for Snapchat — Admin Styles
+ * 
+ * Professional design with Snapchat branding accents
+ */
+
+/* Color Variables */
+:root {
+    --snap-yellow: #F7F400;
+    --snap-yellow-light: #FAFA80;
+    --snap-yellow-dark: #E0DD00;
+    --snap-black: #000000;
+    --snap-white: #FFFFFF;
+    --snap-gray-light: #F5F5F5;
+    --snap-gray: #DDDDDD;
+    --snap-gray-dark: #666666;
+    --snap-blue: #0073AA;
+    --snap-blue-light: #00A0D2;
+}
+
+/* Dark Button Style */
+.snap-pixel-dark-button {
+    background: #3A3E41 !important;
+    border-radius: 10px;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    box-shadow: 0 0 0 1px #3a3e41;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+}
+
+.snap-pixel-dark-button:hover {
+    box-shadow: 0 0 0 2px #ffd301;
+    background-color: #121314;
+    color: white;
+    text-decoration: none;
+}
+
+.snap-pixel-action-buttons {
+    margin-top: 20px;
+}
+
+/* Main Container */
+.snap-pixel-admin {
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #333;
+}
+
+/* Header */
+.snap-pixel-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.snap-pixel-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/* Tabs */
+.snap-pixel-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--snap-gray);
+}
+
+.snap-pixel-tab {
+    padding: 12px 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+
+.snap-pixel-tab:hover {
+    background-color: var(--snap-gray-light);
+    color: var(--snap-black);
+}
+
+.snap-pixel-tab.active {
+    background-color: var(--snap-white);
+    color: var(--snap-black);
+    border-color: var(--snap-gray);
+    border-bottom-color: var(--snap-white);
+    position: relative;
+    bottom: -1px;
+}
+
+.snap-pixel-tab.active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--snap-yellow);
+    border-radius: 3px 3px 0 0;
+}
+
+.snap-pixel-tab[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Cards */
+.snap-pixel-card {
+    background: var(--snap-white);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid var(--snap-gray);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.snap-pixel-card.loaded {
+    /* This class is used by JavaScript, keeping it for compatibility */
+    opacity: 1;
+}
+
+.snap-pixel-card.saving {
+    box-shadow: 0 0 0 1px var(--snap-yellow);
+}
+
+.snap-pixel-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--snap-black);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--snap-gray-light);
+}
+
+.snap-pixel-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.snap-pixel-notice {
+    border-left: 4px solid var(--snap-yellow);
+}
+
+/* Form Fields */
+.snap-pixel-field {
+    margin-bottom: 20px;
+}
+
+.snap-pixel-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.snap-pixel-field input[type="text"],
+.snap-pixel-field input[type="email"],
+.snap-pixel-field select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid var(--snap-gray);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.snap-pixel-field input[type="text"]:focus,
+.snap-pixel-field input[type="email"]:focus,
+.snap-pixel-field select:focus {
+    border-color: var(--snap-yellow);
+    box-shadow: 0 0 0 1px var(--snap-yellow);
+    outline: none;
+}
+
+.snap-pixel-field .description {
+    margin-top: 8px;
+    color: var(--snap-gray-dark);
+    font-size: 13px;
+}
+
+/* Toggle Group */
+.snap-pixel-toggle-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.snap-pixel-toggle {
+    flex: 0 0 33.333%;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 782px) {
+    .snap-pixel-toggle {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .snap-pixel-toggle {
+        flex: 0 0 100%;
+    }
+}
+
+.snap-pixel-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.snap-pixel-toggle label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 45px;
+    background-color: var(--snap-white);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    border: 1px solid var(--snap-gray);
+    position: relative;
+    min-height: 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.snap-pixel-toggle label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--snap-gray-dark);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    background-color: var(--snap-white);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.snap-pixel-toggle label:after {
+    content: '✕';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--snap-gray-dark);
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    line-height: 1;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snap-pixel-toggle input[type="checkbox"]:checked + label:before {
+    border-color: var(--snap-yellow);
+    background-color: var(--snap-yellow);
+}
+
+.snap-pixel-toggle input[type="checkbox"]:checked + label:after {
+    content: '✓';
+    color: var(--snap-white);
+    font-size: 12px;
+}
+
+.snap-pixel-toggle label.animate {
+    transform: scale(1.05);
+}
+
+.snap-pixel-toggle label:hover {
+    border-color: var(--snap-yellow);
+    box-shadow: 0 0 0 1px rgba(247, 244, 0, 0.2);
+}
+
+.snap-pixel-toggle input[type="checkbox"]:focus + label {
+    border-color: var(--snap-yellow);
+    box-shadow: 0 0 0 1px var(--snap-yellow);
+}
+
+.snap-pixel-toggle input[type="checkbox"]:checked + label {
+    background-color: var(--snap-white);
+    color: var(--snap-black);
+    border-color: var(--snap-yellow);
+    border-left-width: 4px;
+    font-weight: 600;
+}
+
+.snap-pixel-toggle input[type="checkbox"]:checked + label:hover {
+    background-color: rgba(247, 244, 0, 0.05);
+}
+
+/* Ripple Effect */
+.snap-pixel-ripple {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 0;
+    height: 0;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    background: rgba(247, 244, 0, 0.3);
+    animation: ripple 0.5s ease-out;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+}
+
+/* Actions */
+.snap-pixel-actions {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--snap-gray-light);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.snap-pixel-actions .button,
+.snap-pixel-actions input[type="submit"] {
+    background: var(--snap-yellow);
+    border-color: var(--snap-yellow-dark);
+    color: var(--snap-black);
+    font-weight: 600;
+    padding: 8px 20px;
+    height: auto;
+    box-shadow: none;
+    text-shadow: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.snap-pixel-actions .button:hover,
+.snap-pixel-actions .button:focus,
+.snap-pixel-actions input[type="submit"]:hover,
+.snap-pixel-actions input[type="submit"]:focus {
+    background: var(--snap-yellow-dark);
+    border-color: var(--snap-yellow-dark);
+    color: var(--snap-black);
+    box-shadow: none;
+}
+
+.snap-pixel-actions .button-secondary {
+    border-color: var(--snap-gray);
+    color: #333;
+    background: var(--snap-white);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.snap-pixel-actions .button-secondary:hover,
+.snap-pixel-actions .button-secondary:focus {
+    border-color: var(--snap-gray-dark);
+    color: var(--snap-black);
+    background: var(--snap-gray-light);
+}
+
+/* Lists */
+.snap-pixel-events-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.snap-pixel-events-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--snap-gray-light);
+}
+
+.snap-pixel-events-list li:last-child {
+    border-bottom: none;
+}
+
+.snap-pixel-events-list strong {
+    color: var(--snap-black);
+    font-weight: 600;
+}
+
+/* Help Tab */
+.snap-pixel-card ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.snap-pixel-card ol li {
+    margin-bottom: 10px;
+}
+
+.snap-pixel-card a {
+    color: var(--snap-black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--snap-yellow);
+}
+
+.snap-pixel-card a:hover {
+    background-color: var(--snap-yellow-light);
+    text-decoration: none;
+}
+
+/* Snapchat branding accent - subtle yellow ghost icon for Snapchat section headers */
+.snap-pixel-card h2:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background-color: var(--snap-yellow);
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+/* Animations and Effects */
+.snap-pixel-toggle label {
+    transition: all 0.2s ease;
+}
+
+.snap-pixel-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 100;
+    max-width: 200px;
+    text-align: center;
+    display: none;
+}
+
+.snap-pixel-tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Improvements */
+@media (max-width: 782px) {
+    .snap-pixel-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .snap-pixel-tab {
+        flex: 1 0 auto;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+/* Focus Styles for Accessibility */
+.snap-pixel-tab:focus {
+    box-shadow: 0 0 0 1px var(--snap-yellow);
+    outline: none;
+}
+
+.snap-pixel-toggle label:focus-within {
+    box-shadow: 0 0 0 1px var(--snap-yellow);
+    outline: none;
+}
+
+/* WooCommerce Settings */
+.snap-pixel-card .snap-pixel-card {
+    margin: 20px 0;
+    box-shadow: none;
+    border: 1px solid var(--snap-gray);
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.snap-pixel-card .snap-pixel-card h2 {
+    font-size: 16px;
+    border-bottom-color: var(--snap-gray);
+}
+
+.snap-pixel-card .snap-pixel-card h2:before {
+    height: 16px;
+}
+
+.woocommerce-settings {
+    transition: all 0.3s ease;
+}
+
+/* Fix for WooCommerce save button */
+.snap-pixel-woo-save {
+    background: var(--snap-yellow) !important;
+    border-color: var(--snap-yellow-dark) !important;
+    color: var(--snap-black) !important;
+    font-weight: 600 !important;
+    padding: 8px 20px !important;
+    height: auto !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    margin-right: 10px !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+}
+
+.snap-pixel-woo-save:hover,
+.snap-pixel-woo-save:focus {
+    background: var(--snap-yellow-dark) !important;
+    border-color: var(--snap-yellow-dark) !important;
+    color: var(--snap-black) !important;
+    box-shadow: none !important;
+}
+
+.snap-pixel-content {
+    margin-top: 20px;
+}
+
+/* Addon Styling */
+.snap-pixel-addon {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.snap-pixel-addon:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}

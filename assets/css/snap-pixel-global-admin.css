@@ -1,0 +1,16 @@
+/**
+ * Pixel Integration for Snapchat — Global Admin Styles
+ * 
+ * These styles are loaded on all admin pages
+ */
+
+/* Fix for plugin menu icon size */
+#adminmenu .toplevel_page_snap-pixel .wp-menu-image img {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    padding: 0 !important;
+    margin-top: 7px !important;
+    opacity: 1 !important;
+} 
